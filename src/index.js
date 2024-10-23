@@ -5,7 +5,9 @@ function displayWeather(response) {
   let cityName = response.data.city;
   let temperature = Math.round(response.data.temperature.current);
 
-  document.querySelector("h1").innerHTML = `${cityName} - ${temperature}°C`;
+  //document.querySelector("h1").innerHTML = `${cityName} - ${temperature}°C`;
+  document.querySelector("#city-name").innerHTML = `${cityName}`;
+  document.querySelector("#temperature").innerHTML = `${temperature}°C`;
 
   let iconUrl = `https://api.shecodes.io/weather/v1/icons/${response.data.condition.icon}.png`;
   //document.querySelector("#weather-icon").setAttribute("src", iconUrl);
@@ -48,11 +50,11 @@ let currentDate = document.querySelector("#current-date");
 let currentTime = new Date();
 currentDate.innerHTML = formatDate(currentTime);
 
-//Search
-let searchForm = document.querySelector("#search-form");
-searchForm.addEventListener("submit", searchCity);
+//Search - Remove?
+//let searchForm = document.querySelector("#search-form");
+//searchForm.addEventListener("submit", searchCity);
 
-//Page loading
+//Page loading + Search
 document.addEventListener("DOMContentLoaded", function () {
   let searchForm = document.querySelector("#search-form");
   if (searchForm) {
