@@ -94,6 +94,7 @@ button:hover {
   border-radius: 5px;
   border: 1px solid #ccc;
   display: inline-block;
+  color: black;
 }
 button {
   padding: 10px 16px;
@@ -106,6 +107,7 @@ button {
   display: inline-block;
   transition: all 200ms ease;
   margin: 0;
+  color: black;
 }
 .list {
   text-align: center;
@@ -119,6 +121,7 @@ button {
   text-align: center;
 }
 footer p {
+  text-align: center;
   color: black;
   opacity: 1;
   margin: 10px 0;

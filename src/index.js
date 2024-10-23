@@ -51,3 +51,14 @@ currentDate.innerHTML = formatDate(currentTime);
 //Search
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", searchCity);
+
+//Page loading
+document.addEventListener("DOMContentLoaded", function () {
+  let searchForm = document.querySelector("#search-form");
+  if (searchForm) {
+    searchForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      searchCity();
+    });
+  }
+});
