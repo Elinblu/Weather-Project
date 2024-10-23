@@ -118,9 +118,15 @@ button {
 .following-days {
   text-align: center;
 }
+footer p {
+  color: black;
+  opacity: 1;
+  margin: 10px 0;
+  display: block;
+}
+
 footer {
   text-align: center;
-  background-color: #f1f1f1;
   color: black;
   padding: 25px;
   margin: 25px;
