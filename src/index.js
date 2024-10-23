@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (searchForm) {
     searchForm.addEventListener("submit", function (event) {
       event.preventDefault();
-      searchCity();
+      searchCity(event);
     });
   }
 });
