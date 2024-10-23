@@ -58,7 +58,7 @@ form {
   margin: 0 auto;
   display: block;
   color: white;
-  opacity: 65%;
+  opacity: 100%;
 }
 button {
   display: block;
@@ -94,7 +94,6 @@ button:hover {
   border-radius: 5px;
   border: 1px solid #ccc;
   display: inline-block;
-  color: black;
 }
 button {
   padding: 10px 16px;
@@ -107,7 +106,6 @@ button {
   display: inline-block;
   transition: all 200ms ease;
   margin: 0;
-  color: black;
 }
 .list {
   text-align: center;
